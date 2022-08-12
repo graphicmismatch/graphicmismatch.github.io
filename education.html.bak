@@ -6,25 +6,25 @@
     <link rel="icon" type="image/x-icon" href="images/Graphicmismatchlogo.svg">
     <style>
 a:link {
-  color: green;
+  color: white;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: lightgreen;
+  color: white;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:hover {
-  color: gray;
+  color: white;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:active {
-  color: darkgreen;
+  color: white;
   background-color: transparent;
   text-decoration: none;
 }
@@ -40,11 +40,19 @@ body {
   text-align: center;   
 }
       
+.justify{
+  vertical-align: middle;
+}
+      
 @font-face {
   font-family: 'GameInProj';
   src: url('game.ttf');
 }
-
+img
+{
+  float: left;
+  padding-bottom: 0%;
+}
 #textdiv {
   font-family: "GameInProj";
   overflow-wrap: break-word;
@@ -52,17 +60,80 @@ body {
 }
 
 </style> </head>
-  <body> <a href="homepage.html" target="_self">back</a> <br>
-    <br>
-    <br>
-    <div class="center"> <a href="https://www.linkedin.com/in/rayan-madan/" target="_blank"><img src="images/Linkedin.svg"alt="itch" title="logo" id="image" height=2% width=2%> LinkedIn</a>
-      <br>
-      <a href="https://graphicmismatch.itch.io/" target="_blank"><img src="images/itch.svg"alt="itch" title="logo" id="image" height=2% width=2%> Itch</a> <br>
+  <body> <a href="index.html" target="_self"><img src="images/back.png" alt="back"
 
-      <a href="https://www.instagram.com/riptide.syncopate/" target="_blank"><img src="images/instagram.svg"alt="itch" title="logo" id="image" height=2% width=2%> Instagram
-        (Personal)</a> <br>
-      <a href="https://www.instagram.com/graphicmismatch/" target="_blank"><img src="images/instagram.svg"alt="itch" title="logo" id="image" height=2% width=2%> Instagram
-        (Development)</a> <br>
+        title="back" id="image" width="5%"></a> <br>
+     <br>
+      <br>
+      <br>
+    <div style="line-height: 120%;">
+      <h2> Schooling: </h2>
+      <a href="https://www.vibgyorhigh.com/" target="_blank"><img src="images/vibgyor.jpg"
+
+          alt="vibgyor high" title="logo" id="image" width="10%"> <font style="vertical-align: top;  padding-left: 1%; padding-bottom: 1%;"
+
+          size="6">Vibgyor High(ICSE)</font><br>
+        <font style="vertical-align: bottom; padding-left: 1%;padding-top: 1%padding-bottom: 0%;; color: gray;"
+
+          size="4">(June 2012 - July 2021)</font> </a> <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <a href="http://abhinavambegaon.org/" target="_blank"> <img src="images/abhinav.jpg"
+
+          alt="abhinav school" title="logo" id="image" width="10%"> <font style="vertical-align: top;  padding-left: 1%; padding-bottom: 1%;"
+
+          size="6">Abhinav English School(CBSE)</font><br>
+        <font style="vertical-align: bottom; padding-left: 1%;padding-top: 1%; color: gray;"
+
+          size="4">(July 2021 - July 2023)</font>
+        <div class="justify"></div>
+      </a> </div>
+    <br>
+    <br> 
+    <br>
+    <br>
+    <br>
+    <div style="line-height: 120%;">
+      <h2> Certifications: </h2>
+      <img src="images/unity.jpg" alt="unity" title="logo" id="image" width="10%">
+        <font style="vertical-align: middle;  padding-left: 1%;" size="6">Unity
+          Certified User: Programmer</font><br><br>
+      <br>
+      <br>
+      <br>
+      <br>
+         <img src="images/unity.jpg" alt="unity" title="logo" id="image" width="10%">
+        <font style="vertical-align: middle;  padding-left: 1%;" size="6">Unity Certified Associate: Programmer</font><br><br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <img src="images/unity.jpg" alt="unity" title="logo" id="image" width="10%">
+        <font style="vertical-align: middle;  padding-left: 1%;" size="6">Unity Certified Professional: Programmer</font><br><br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <img src="images/calarts.jpg" alt="unity" title="logo" id="image" width="10%">
+        <font style="vertical-align: middle;  padding-left: 1%;" size="6">Game Design: Art and Concepts Specialization (Coursera)</font><br><br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <img src="images/UCS.jpg" alt="unity" title="logo" id="image" width="10%">
+        <font style="vertical-align: middle;  padding-left: 1%;" size="6">C# Programming for Unity Game Development Specialization (Coursera)</font><br><br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <img src="images/coursera.jpg" alt="unity" title="logo" id="image" width="10%">
+        <font style="vertical-align: middle;  padding-left: 1%;" size="6">Pixel Art for Video Games (Coursera)</font><br><br>
+      <br>
+      <br>
+      <br>
+      <br>
     </div>
     
   </body>
