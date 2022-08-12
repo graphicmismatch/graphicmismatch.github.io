@@ -28,7 +28,10 @@ a:active {
   background-color: transparent;
   text-decoration: none;
 }
-      
+ @font-face {
+  font-family: 'GameInProj';
+  src: url('game.ttf');
+}  
 body {
   background: rgba(0, 0, 0, 0) url("images/background.png") no-repeat fixed center center / cover;
   color: white;
@@ -44,10 +47,7 @@ body {
   vertical-align: middle;
 }
       
-@font-face {
-  font-family: 'GameInProj';
-  src: url('game.ttf');
-}
+
 img
 {
   float: left;
