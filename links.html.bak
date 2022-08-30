@@ -29,6 +29,10 @@ a:active {
   text-decoration: none;
 }
       
+@font-face {
+  font-family: 'GameInProj';
+  src: url('game.ttf');
+} 
 body {
   background: rgba(0, 0, 0, 0) url("images/background.png") no-repeat fixed center center / cover;
   color: white;
@@ -40,10 +44,7 @@ body {
   text-align: center;   
 }
       
-@font-face {
-  font-family: 'GameInProj';
-  src: url('game.ttf');
-}
+
 
 #textdiv {
   font-family: "GameInProj";
@@ -52,7 +53,7 @@ body {
 }
 
 </style> </head>
-  <body> <a href="homepage.html" target="_self"><img src="images/back.png" alt="back"
+  <body> <a href="index.html" target="_self"><img src="images/back.png" alt="back"
 
         title="back" id="image" width="5%"></a> <br>
     <br>
@@ -76,5 +77,6 @@ body {
 
           width="2%"> Instagram (Development)</a> <br>
     </div>
+    
   </body>
 </html>
