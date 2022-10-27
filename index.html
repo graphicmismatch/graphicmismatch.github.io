@@ -52,7 +52,25 @@ body {
   overflow-wrap: break-word;
   writing-mode: horizontal-tb;
 }
-
+html {
+  --scrollbarBG: #070609;
+  --thumbBG: #90EE90;
+}
+body::-webkit-scrollbar {
+  width: 11px;
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
 </style> </head>
   <body> <a href="links.html" target="_self"><img src="images/Graphicmismatchlogo.svg"
 
