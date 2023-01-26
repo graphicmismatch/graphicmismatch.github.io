@@ -5,5 +5,4 @@ Technologies used:
 - HTML
 - CSS
 - JS
-- Unity
 
