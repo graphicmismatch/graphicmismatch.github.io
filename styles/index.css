@@ -5,20 +5,25 @@
     width: auto;
     border-radius: 10px;
     display: grid;
-    
+    position: relative;
     background-color: rgba(30, 30, 30, 0.3);
     backdrop-filter: blur(10px);
     grid-template-areas:
-    "top top top"
+    "topp topp topp topp"
     "mid1 mid2 mid3"
     "bot bot bot";
-    gap: 5px;
+    gap: -5px;
+    grid-template-columns: 0.5fr auto auto auto;
     grid-template-rows: 70px auto auto;
 }
-
-.pagecontainer div.top{
-    grid-area: top;
-    grid-template-columns: 0fr 3fr;
+.pagecontent.topp {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    column-gap: 20px;
+  }
+.pagecontainer div.topp{
+    grid-area: topp;
 }
 .pagecontainer div.mid1{
     grid-area: mid1;
@@ -33,16 +38,11 @@
     grid-area: bot;
 }
 
-.pagecontainer div.profilepic {
-    grid-area: profilepic;
-}
 
 .profilepic{
+    margin: 0;
+    vertical-align: middle;
     border-radius: 50%;
-    border-color: darkgreen;
-    border-style: solid;
-    border-width: 2px;
-    float:left;
-    box-sizing: border-box;
-    height: 100%;
-}
+    border: 2px solid darkgreen;
+  }
+
