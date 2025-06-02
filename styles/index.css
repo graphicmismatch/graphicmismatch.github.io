@@ -43,6 +43,6 @@
     border-style: solid;
     border-width: 2px;
     float:left;
-    box-sizing: content-box;
+    box-sizing: border-box;
     height: 100%;
 }
