@@ -1,0 +1,48 @@
+.pagecontainer div{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    padding: 10px 10px 10px 10px;
+    width: auto;
+    border-radius: 10px;
+    display: grid;
+    
+    background-color: rgba(30, 30, 30, 0.3);
+    backdrop-filter: blur(10px);
+    grid-template-areas:
+    "top top top"
+    "mid1 mid2 mid3"
+    "bot bot bot";
+    gap: 5px;
+    grid-template-rows: 70px auto auto;
+}
+
+.pagecontainer div.top{
+    grid-area: top;
+    grid-template-columns: 0fr 3fr;
+}
+.pagecontainer div.mid1{
+    grid-area: mid1;
+}
+.pagecontainer div.mid2{
+    grid-area: mid2;
+}
+.pagecontainer div.mid3{
+    grid-area: mid3;
+}
+.pagecontainer div.bot{
+    grid-area: bot;
+}
+
+.pagecontainer div.profilepic {
+    grid-area: profilepic;
+}
+
+.profilepic{
+    border-radius: 50%;
+    border-color: darkgreen;
+    border-style: solid;
+    border-width: 2px;
+    float:left;
+    box-sizing: content-box;
+    height: 100%;
+}

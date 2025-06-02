@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'GameFont';
+    src: url('../assets/game.ttf');
+}
+body{
+    min-height: 100vh;
+    background:  rgba(0, 0, 0, 0) url("../assets/images/background.png") no-repeat fixed center center / cover;
+  
+    font-family: 'GameFont';
+    color: rgb(224, 224, 224);
+}
+
+
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+a:visited {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: gray;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:active {
+    color: darkgreen;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+
+
