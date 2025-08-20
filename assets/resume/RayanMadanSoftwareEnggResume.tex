@@ -1,0 +1,244 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Template
+% Version 1.1 (February 24, 2025)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Authors:
+% Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[9pt]{developercv} 
+
+\newenvironment{tightemize}
+{
+	\begin{itemize}
+		\setlength{\itemsep}{0pt}
+		\setlength{\parskip}{0pt}
+		\setlength{\parsep}{0pt}     
+	}
+	{ 
+	\end{itemize}                  
+} 
+
+\begin{document}
+	
+	%----------------------------------------------------------------------------------------
+	%	TITLE AND CONTACT INFORMATION
+	%----------------------------------------------------------------------------------------
+	
+	\begin{minipage}[t]{0.37\textwidth}
+		\vspace{-\baselineskip}
+		
+		\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Rayan}}}}}
+		
+		\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Madan}}}}}
+		
+		\vspace{6pt}
+		
+		{\huge Software Engineer \& Game Developer}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{0.21\textwidth}
+		\vspace{-\baselineskip}
+		
+		\icon{MapMarker}{12}{Vellore, India}\\
+		\icon{Phone}{12}{+91 7030912088}\\
+		\icon{Linkedin}{12}{\href{https://www.linkedin.com/in/rayan-madan}{rayan-madan}}\\
+		\icon{Discord}{12}{vladthenotsoglad}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{0.32\textwidth}
+		\vspace{-\baselineskip}
+		
+		\icon{ItchIo}{12}{\href{https://graphicmismatch.itch.io/}{graphicmismatch.itch.io}}\\
+		\icon{Github}{12}{\href{https://github.com/graphicmismatch}{graphicmismatch}}\\
+		\icon{At}{12}{\href{mailto:rayan.madan.2005@gmail.com}{rayan.madan.2005@gmail.com}}\\	
+	\end{minipage}
+	
+	\vspace{0.5cm}
+	
+	%----------------------------------------------------------------------------------------
+	%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+	%----------------------------------------------------------------------------------------
+	
+	\cvsect{Who Am I?}
+	
+	\begin{minipage}[t]{0.4\textwidth}
+		\vspace{-\baselineskip}
+		I’m a Unity Game Developer and Software Engineer with 3 Unity certifications, 3 Coursera specializations, 4 internships, 12+ game jams, and global competition awards. I specialize in Unity \& C\#, with experience in XR, AR/VR, systems programming, and full-stack concepts. I’m passionate about building scalable, engaging interactive experiences and collaborating across diverse teams.\\
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{0.5\textwidth}
+		\vspace{-\baselineskip}
+		
+		\begin{barchart}{5.5}
+			\baritem{Unity3D}{100}
+			\baritem{C\#}{85}
+			\baritem{Game Design}{80}
+			\baritem{C/C++}{60}
+			\baritem{Git/GitHub}{75}
+			\baritem{Python}{65}
+			\baritem{LaTeX}{60}
+			\baritem{SQL}{60}
+		\end{barchart}
+	\end{minipage}
+	
+	%----------------------------------------------------------------------------------------
+	%	EXPERIENCE
+	%----------------------------------------------------------------------------------------
+	
+	\cvsect{Experience}
+	
+	\begin{entrylist}
+		\entry
+		{01/2025 -- 06/2025\\\footnotesize{Internship}}
+		{Game Developer Intern}
+		{Eternoplay Studio}
+		{
+			Developed and published "Word Quest 2025" on Google Play Store.\\
+			Implemented scalable game architecture and optimized mobile performance.\\
+			Collaborated with cross-functional teams using Agile.\\
+			\texttt{Unity3D}\slashsep\texttt{C\#}\slashsep\texttt{Python}\slashsep\texttt{Git}
+		}
+		\entry
+		{02/2022 -- 07/2022\\\footnotesize{Internship}}
+		{Unity Developer Intern}
+		{Corkbrick Europe}
+		{
+			Designed and implemented core game mechanics including survival and building systems.\\
+			Contributed to world design and optimized geometry rendering.\\
+			Applied OOP principles for scalable code.\\
+			\texttt{Unity3D}\slashsep\texttt{C\#}\slashsep\texttt{Git}
+		}
+		\entry
+		{09/2021 -- 12/2021\\\footnotesize{Internship}}
+		{Unity Developer Intern}
+		{Techax Labs}
+		{
+			Reduced APK size by 40\% using Unity Addressable Assets with AWS integration.\\
+			Developed AR-based apps with ARKit, ARCore, and OpenCV.\\
+			Built ML-driven agents with Unity ML-Agents.\\
+			\texttt{Unity3D}\slashsep\texttt{C\#}\slashsep\texttt{Git}\slashsep\texttt{Vuforia}
+		}
+		\entry
+		{06/2021 -- 08/2021\\\footnotesize{Internship}}
+		{Unity Intern}
+		{Compact Gyan}
+		{
+			Implemented physics simulations for educational apps (refraction, gravity).\\
+			Developed reusable modular code components.\\
+			\texttt{Unity3D}\slashsep\texttt{C\#}
+		}
+	\end{entrylist}
+	
+	%----------------------------------------------------------------------------------------
+	%	EDUCATION
+	%----------------------------------------------------------------------------------------
+	
+	\cvsect{Education}
+	
+	\begin{entrylist}
+		\entry
+		{2023 -- 2027}
+		{B.Tech - Computer Science and Engineering}
+		{Vellore Institute of Technology - Vellore}
+		{
+			\textbf{Extracurricular Activities:}
+			\begin{itemize}
+				\item Senior Core (Game Dev / XR) at Google Developer Student Club (GDSC-VIT)
+				\item Mentoring juniors, hiring, and guiding hackathon teams
+			\end{itemize}
+		}
+		\entry
+		{2021}
+		{Grade X - ICSE (93.2\%)}
+		{Vibgyor High, Pune}
+		{Computer Applications - 100\%}
+		\entry
+		{2023}
+		{Grade XII - CBSE (77.8\%)}
+		{Abhinav English School, Pune}
+		{Informatics Practices - 92\%}
+	\end{entrylist}
+	
+	%----------------------------------------------------------------------------------------
+	%	CERTIFICATIONS, PROJECTS, AWARDS
+	%----------------------------------------------------------------------------------------
+	
+	\cvsect{Certifications \& Courses}
+	
+	\begin{itemize}
+		\item Unity Certified Professional: Programmer (2021--2024)
+		\item Unity Certified Associate: Programmer (2021--2024)
+		\item Unity Certified User: Programmer (2021--2024)
+		\item Coursera Specializations:
+		\begin{tightemize}
+			\item C\# Programming for Unity Game Development (University of Colorado)
+			\item Extended Reality for Everybody (University of Michigan)
+			\item Game Design: Art and Concepts (CalArts)
+		\end{tightemize}
+		\item Google Cloud Generative AI (Prompt Engineering, Vertex AI, Streamlit)
+	\end{itemize}
+	
+	\cvsect{Projects \& Games}
+	
+	\begin{itemize}
+		\item \textbf{Defrost} (Winner - CodeDay 2022 World Champion \& Best in Class)
+		\item \textbf{Pandaemonium} (Ludum Dare 55) - \href{https://graphicmismatch.itch.io/pandaemonium}{Link}
+		\item \textbf{Dream} (Russia Summer Game Jam) - \href{https://graphicmismatch.itch.io/dream}{Link}
+		\item \textbf{Echoes From Below} (Pixel Game Jam) - \href{https://rzenn.itch.io/echoes-from-below}{Link}
+		\item \textbf{SpeedDemon} (Genesis Studio 2 Stage, VIT) - \href{https://graphicmismatch.itch.io/speeddemon}{Link}
+		\item \textbf{WASDE} – Dialogue editor built in Unity
+	\end{itemize}
+	
+	\cvsect{Awards}
+	
+	\begin{itemize}
+		\item CodeDay Summer 2022 – World Champion Excellence Award \& Best in Class Game
+		\item VIT GDSC WomenTechies'24 Hackathon – 3rd Place (AR-based project)
+		\item Genesis Studio 2 Stage – 1st Place (Game Jam, VIT Gravitas)
+	\end{itemize}
+	
+	%----------------------------------------------------------------------------------------
+	%	ADDITIONAL INFORMATION
+	%----------------------------------------------------------------------------------------
+	
+	\begin{minipage}[t]{0.3\textwidth}
+		\vspace{-\baselineskip}
+		
+		\cvsect{Languages}
+		
+		\textbf{English} - Native\\
+		\textbf{Hindi} - Native\\
+		\textbf{Marathi} - Mother Tongue\\
+		\textbf{French} - Basic
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{0.3\textwidth}
+		\vspace{-\baselineskip}
+		
+		\cvsect{Technical Skills}
+		
+		Unity, C\#, C/C++, Python, Java, SQL, Git/GitHub, Unix/Linux, Bash, Postman API Testing, Blender, Aseprite, GIMP, OpenMPT
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{0.3\textwidth}
+		\vspace{-\baselineskip}
+		
+		\cvsect{Hobbies}
+		
+		Listening to music, playing innovative indie games, exploring electronics \& tinkering with software projects.
+	\end{minipage}
+	
+	%----------------------------------------------------------------------------------------
+	
+\end{document}
