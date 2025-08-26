@@ -1,82 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/site/style.css" />
+    <link rel="stylesheet" href="styles/site/navbar.css" />
+    <link rel="stylesheet" href="styles/site/sidebar.css" />
+    <link rel="stylesheet" href="styles/site/directory.css" />
+    <link rel="icon" href="/assets/images/Graphicmismatchlogo.svg" />
+
+    <script type="text/javascript" src="js/site/navbar.js"></script>
     <title>My Links</title>
-    <link rel="icon" type="image/x-icon" href="images/Graphicmismatchlogo.svg">
-    <style>
-a:link {
-  color: green;
-  background-color: transparent;
-  text-decoration: none;
-}
+  </head>
+  <nav class="navbar">
+    <ul>
+      <li class="navlogo">
+        <a href="index.html">&gt; GraphicMismatch</a>
+      </li>
+      <li class="navcontent hideonmobile">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="navcontent hideonmobile">
+        <a href="directory.html">Directory</a>
+      </li>
+      <li class="navcontent hideonmobile">
+        <a href="privacy.html">Privacy Policies</a>
+      </li>
+      <li class="navcontent hideonmobile">
+        <a href="links.html">Links</a>
+      </li>
+      <li
+        class="navcontent navmenubutton"
+        onclick="showSidebar()"
+        value="run external javascript"
+      >
+        <a href="#"> ▼ </a>
+      </li>
+    </ul>
+  </nav>
+  <nav class="sidebar">
+    <ul>
+      <li
+        class="sbcontent"
+        onclick="hideSidebar()"
+        value="run external javascript"
+      >
+        <a href="#">◀</a>
+      </li>
+      <li class="sbcontent hideonmobile">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="sbcontent">
+        <a href="links.html">Links</a>
+      </li>
+      <li class="sbcontent">
+        <a href="directory.html">Directory</a>
+      </li>
+      <li class="sbcontent">
+        <a href="privacy.html">Privacy Policies</a>
+      </li>
+    </ul>
+  </nav>
+  <body>
+    <div class="content directory">
+      <ul>
+        <li><b>Links</b></li>
+        <li>├─ <a href="./directory.html">../</a></li>
+        <li>
+          ├─ <a href="https://www.linkedin.com/in/rayan-madan/">LinkedIn</a>
+        </li>
+        <li>├─ <a href="https://graphicmismatch.itch.io/">Itch.io</a></li>
+        <li>
+          ├─
+          <a href="https://github.com/graphicmismatch">GitHub</a>
+        </li>
 
-a:visited {
-  color: lightgreen;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:hover {
-  color: gray;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:active {
-  color: darkgreen;
-  background-color: transparent;
-  text-decoration: none;
-}
-      
-@font-face {
-  font-family: 'GameInProj';
-  src: url('game.ttf');
-} 
-body {
-  background: rgba(0, 0, 0, 0) url("images/background.png") no-repeat fixed center center / cover;
-  color: white;
-  font-family: "GameInProj";
-  font-size: 200%;
-}
-
-.center{
-  text-align: center;   
-}
-      
-
-
-#textdiv {
-  font-family: "GameInProj";
-  overflow-wrap: break-word;
-  writing-mode: horizontal-tb;
-}
-
-</style> </head>
-  <body> <a href="index.html" target="_self"><img src="images/back.png" alt="back"
-
-        title="back" id="image" width="5%"></a> <br>
-    <br>
-    <br>
-    <div class="center"> <a href="https://www.linkedin.com/in/rayan-madan/" target="_blank"><img
-
-          src="images/Linkedin.svg" alt="LinkedIn" title="logo" id="image" height="2%"
-
-          width="2%"> LinkedIn</a> <br>
-      <a href="https://graphicmismatch.itch.io/" target="_blank"><img src="images/itch.svg"
-
-          alt="itch" title="logo" id="image" height="2%" width="2%"> Itch</a> <br>
-      <a href="https://www.instagram.com/riptide.syncopate/" target="_blank"><img
-
-          src="images/instagram.svg" alt="instagram" title="logo" id="image" height="2%"
-
-          width="2%"> Instagram (Personal)</a> <br>
-      <a href="https://www.instagram.com/graphicmismatch/" target="_blank"><img
-
-          src="images/instagram.svg" alt="instagram" title="logo" id="image" height="2%"
-
-          width="2%"> Instagram (Development)</a> <br>
+        <li>
+          ├─
+          <a href="https://leetcode.com/u/graphicmismatch/">LeetCode</a>
+        </li>
+        <li>
+          ├─
+          <a href="https://www.instagram.com/riptide.syncopate/"
+            >Personal Instagram</a
+          >
+        </li>
+        <li>
+          ├─
+          <a href="https://www.instagram.com/graphicmismatch/"
+            >Development Instagram</a
+          >
+        </li>
+        <li>
+          └─ <a href="https://www.credly.com/users/rayan-madan">Credly</a>
+        </li>
+      </ul>
     </div>
-    
   </body>
 </html>

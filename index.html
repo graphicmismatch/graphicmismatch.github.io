@@ -3,64 +3,485 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/navbar.css" />
-    <link rel="stylesheet" href="styles/sidebar.css" />
-    <link rel="stylesheet" href="styles/index.css" />
-    <script type="text/javascript" src="js/navbar.js"></script>
-    <title>Document</title>
+    <title>GraphicMismatch</title>
+    <link rel="stylesheet" href="styles/portfolio/index.css" />
+    <link rel="stylesheet" href="styles/portfolio/navigation.css" />
+    <link rel="stylesheet" href="styles/portfolio/components.css" />
+    <link rel="stylesheet" href="styles/portfolio/animations.css" />
+    <link rel="icon" href="/assets/images/Graphicmismatchlogo.svg" />
   </head>
-  <nav class="navbar">
-    <ul>
-      <li class="navlogo">
-        <a href="index.html">&gt; GraphicMismatch</a>
-      </li>
-      <li class="navcontent hideonmobile">
-        <a href="privacy.html">Privacy Policies</a>
-      </li>
-      <li class="navcontent hideonmobile">
-        <a href="links.html">Links</a>
-      </li>
-      <li
-        class="navcontent navmenubutton"
-        onclick="showSidebar()"
-        value="run external javascript"
-      >
-        <a href="#"> ▼ </a>
-      </li>
-    </ul>
-  </nav>
-  <nav class="sidebar">
-    <ul>
-      <li
-        class="sbcontent"
-        onclick="hideSidebar()"
-        value="run external javascript"
-      >
-        <a href="#">◀</a>
-      </li>
-      <li class="sbcontent">
-        <a href="links.html">Links</a>
-      </li>
-      <li class="sbcontent">
-        <a href="privacy.html">Privacy Policies</a>
-      </li>
-    </ul>
-  </nav>
   <body>
-    <br />
-    <br />
-    <div class="pagecontainer">
-      <div class="pagecontent topp">
-        <img
-          class="profilepic"
-          src="assets/images/notme.png"
-          alt="rick astely lol"
-          style="box-sizing: border-box; height: 95%"
-        />
-        &gt; Name: Rayan Madan<br />
-        &gt; Location: India
+    <!-- ASCII Mouse Trail Container -->
+    <div id="trail-container"></div>
+    <div class="construction marquee-container">
+      <div class="marquee">
+        <div style="color: black; font-weight: bold">
+          !! UNDER CONSTRUCTION !!
+        </div>
       </div>
     </div>
+    <!-- Header with Glitchy Title -->
+    <header class="main-header">
+      <div class="glitch-wrapper">
+        <h1 class="header-text">GRAPHICMISMATCH</h1>
+      </div>
+      <div>&gt; GAME DEVELOPER &lt;</div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="retro-nav">
+      <div class="nav-container">
+        <a href="./links.html" class="nav-link">[ LINKS ]</a>
+        <a href="./privacy.html" class="nav-link">[ PRIVACY POLICIES ]</a>
+        <a href="./directory.html" class="nav-link">[ DIRECTORY ]</a>
+        <a href="./resumes.html" class="nav-link">[ RESUMES ]</a>
+      </div>
+      <div class="nav-decoration">
+        <div class="marquee">★ VOLO VIDERI CALLIDUS ★</div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content main-header">
+      <!-- About Section -->
+      <section id="about" class="content-section">
+        <div class="section-header">
+          <h2 class="section-title flash">░░ README.TXT ░░</h2>
+          <div class="marquee-container">
+            <div class="marquee">
+              ○⟮ ＾皿＾⟯っ HEHEHE I HOPE THIS IS HARD TO READ
+            </div>
+          </div>
+        </div>
+        <div class="simple-box">
+          <p class="intro-text">
+            Hey! I am graphicmismatch! I make games. Find me on Itch,
+            Newgrounds, Linkedin, Instagram and Twitter! Currently studying at
+            VIT Vellore.
+          </p>
+        </div>
+      </section>
+
+      <!-- Games Section -->
+      <section id="projects" class="content-section">
+        <div class="section-header">
+          <h2 class="section-title">▓▓ GAMES ▓▓</h2>
+          <div class="marquee-container">
+            <div class="marquee-reverse">
+              d⟮* ￣▽￣⟯===b DOES ANYONE ACTUALLY READ THESE? d===⟮￣▽￣*⟯b
+            </div>
+          </div>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card border-flash">
+            <h3 class="project-title">DEFROST</h3>
+            <p class="project-desc">
+              Dodge Fiery obstacles as you take control of a sole ice cube as it
+              drops into an infinitely long glass of water. Made for CodeDay
+              Pune 2022 in ~48 hours.
+            </p>
+            <div class="tech-tags">
+              <span class="tag">GDevelop</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://graphicmismatch.itch.io/defrost"
+                class="project-btn"
+                >Play</a
+              >
+              <a
+                href="https://github.com/graphicmismatch/defrost"
+                class="project-btn"
+                >Source Code</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card border-flash">
+            <h3 class="project-title">DREAM</h3>
+            <p class="project-desc">
+              A story driven game about the soviet space age.
+            </p>
+            <div class="tech-tags">
+              <span class="tag">Unity</span>
+              <span class="tag">C#</span>
+              <span class="tag">Blender</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://graphicmismatch.itch.io/dream"
+                class="project-btn"
+                >Download</a
+              >
+              <a
+                href="https://github.com/DertyuGameDev/RSGJ"
+                class="project-btn"
+                >Source Code</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card border-flash">
+            <h3 class="project-title">ECHOES FROM BELOW</h3>
+            <p class="project-desc">
+              Navigate the depths in a challenging submarine mission, testing
+              your survival skills and resource management.
+            </p>
+            <div class="tech-tags">
+              <span class="tag">Unity</span>
+              <span class="tag">C#</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://rzenn.itch.io/echoes-from-below"
+                class="project-btn"
+                >Play</a
+              >
+              <a
+                href="https://github.com/rznn7/echoes-from-below"
+                class="project-btn"
+                >Source Code</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card border-flash">
+            <h3 class="project-title">CROSSY ROAD BUT YOU'RE LATE FOR WORK</h3>
+            <p class="project-desc">
+              crossy road but the cars dont get paid enough to deal with this
+            </p>
+            <div class="tech-tags">
+              <span class="tag">Unity</span>
+              <span class="tag">C#</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://graphicmismatch.itch.io/crossyroadbutyouarelate"
+                class="project-btn"
+                >Play</a
+              >
+              <a
+                href="https://github.com/graphicmismatch/CrossyButLate"
+                class="project-btn"
+                >Source Code</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card border-flash">
+            <h3 class="project-title">MORE</h3>
+            <p class="project-desc">Even More Games!</p>
+            <div class="project-links">
+              <a href="https://graphicmismatch.itch.io" class="project-btn"
+                >GO!</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects-general" class="content-section">
+        <div class="section-header">
+          <h2 class="section-title">██ PROJECTS ██</h2>
+          <div class="marquee-container">
+            <div class="marquee">
+              ◆ THIS SECTION WAS SPONSORED BY NARD VPN ◆
+            </div>
+          </div>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card border-flash">
+            <h3 class="project-title">WASDEditor</h3>
+            <p class="project-desc">
+              A simple dialogue editor built in unity. Allows for non technical
+              writers to visually edit non-linear dialogues.
+            </p>
+            <div class="tech-tags">
+              <span class="tag">Unity</span>
+              <span class="tag">C#</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://graphicmismatch.itch.io/wasdeditor"
+                class="project-btn"
+                >Install</a
+              >
+              <a
+                href="https://github.com/graphicmismatch/WASDEditor"
+                class="project-btn"
+                >Code</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Work Experience Section -->
+      <section id="experience" class="content-section">
+        <div class="section-header">
+          <h2 class="section-title blink">▒▒ EXPERIENCE.LOG ▒▒</h2>
+        </div>
+        <div class="simple-box">
+          <div class="retro-terminal">
+            <div class="terminal-header">
+              <span class="terminal-prompt">&gt;&gt; CAREER_HISTORY.EXE</span>
+            </div>
+            <!--
+<div class="experience-entry">
+  <div class="exp-line">
+    <span class="exp-label">POSITION:</span>
+    <span class="exp-value">UNITY INTERN</span>
+  </div>
+  <div class="exp-line">
+    <span class="exp-label">COMPANY:</span>
+    <span class="exp-value">COMPACT GYAN</span>
+  </div>
+  <div class="exp-line">
+    <span class="exp-label">PERIOD:</span>
+    <span class="exp-value">JUN 2021 - AUG 2021</span>
+  </div>
+  <div class="exp-line">
+    <span class="exp-label">STATUS:</span>
+    <span class="exp-status active blink-slow">█ ACTIVE █</span>
+  </div>
+  <div class="exp-description">
+    &gt; ARCHITECTED CORE GAMEPLAY SYSTEMS<br />
+    &gt; MENTORED JUNIOR DEVELOPERS<br />
+    &gt; SHIPPED 3 TITLES | 500K+ DOWNLOADS
+  </div>
+  <div class="exp-ascii-separator flash">
+    ════════════════════════════════════════
+  </div>
+</div>
+            
+-->
+
+            <div class="experience-entry">
+              <div class="exp-line">
+                <span class="exp-label">POSITION:</span>
+                <span class="exp-value">GAME DEVELOPER INTERN</span>
+              </div>
+              <div class="exp-line">
+                <span class="exp-label">COMPANY:</span>
+                <span class="exp-value">ETERNOPLAY STUDIO</span>
+              </div>
+              <div class="exp-line">
+                <span class="exp-label">PERIOD:</span>
+                <span class="exp-value">JAN 2025 - JUN 2025</span>
+              </div>
+              <div class="exp-line">
+                <span class="exp-label">STATUS:</span>
+                <span class="exp-status complete">█ COMPLETE █</span>
+              </div>
+              <div class="exp-description">
+                <ul>
+                  <li>
+                    Developed and published "Word Quest 2025" on Google Play
+                    Store
+                  </li>
+                  <li>
+                    Implemented scalable game architecture and optimized
+                    performance for mobile platforms
+                  </li>
+                  <li>
+                    Collaborated with cross-functional teams using Agile
+                    methodologies
+                  </li>
+                  <li>Primary Skills: Unity and C#</li>
+                </ul>
+              </div>
+              <div class="exp-ascii-separator flash">
+                ════════════════════════════════════════
+              </div>
+            </div>
+
+            <div class="experience-entry">
+              <div class="exp-line">
+                <span class="exp-label">POSITION:</span>
+                <span class="exp-value">UNITY DEVELOPER INTERN</span>
+              </div>
+              <div class="exp-line">
+                <span class="exp-label">COMPANY:</span>
+                <span class="exp-value">CORKBRICK EUROPE</span>
+              </div>
+              <div class="exp-line">
+                <span class="exp-label">PERIOD:</span>
+                <span class="exp-value">FEB 2022 - JUL 2022</span>
+              </div>
+              <div class="exp-line">
+                <span class="exp-label">STATUS:</span>
+                <span class="exp-status complete">█ COMPLETE █</span>
+              </div>
+              <div class="exp-description">
+                <ul>
+                  <li>
+                    Designed and implemented core game mechanics including
+                    survival and building systems
+                  </li>
+                  <li>
+                    Contributed to world design and optimized geometry rendering
+                    for improved performance
+                  </li>
+                  <li>
+                    Applied object-oriented design principles to create
+                    maintainable and scalable code
+                  </li>
+                  <li>Primary Skills: Unity and C#</li>
+                </ul>
+              </div>
+              <div class="exp-ascii-separator flash">
+                ════════════════════════════════════════
+              </div>
+            </div>
+
+            <div class="experience-entry">
+              <div class="exp-line">
+                <span class="exp-label">POSITION:</span>
+                <span class="exp-value">UNITY DEVELOPER INTERN</span>
+              </div>
+              <div class="exp-line">
+                <span class="exp-label">COMPANY:</span>
+                <span class="exp-value">TECHAX LABS</span>
+              </div>
+              <div class="exp-line">
+                <span class="exp-label">PERIOD:</span>
+                <span class="exp-value">SEP 2021 - DEC 2021</span>
+              </div>
+              <div class="exp-line">
+                <span class="exp-label">STATUS:</span>
+                <span class="exp-status complete">█ COMPLETE █</span>
+              </div>
+              <div class="exp-description">
+                <ul>
+                  <li>
+                    Reduced APK size by 40% using Unity Addressable Assets and
+                    AWS S3
+                  </li>
+                  <li>
+                    Developed AR-based applications using ARKit, AR Core, and
+                    computer vision (OpenCV)
+                  </li>
+                  <li>
+                    Built machine learning agent behaviors using Unity ML Agents
+                    framework
+                  </li>
+                  <li>Primary Skills: Unity and C#</li>
+                </ul>
+              </div>
+              <div class="exp-ascii-separator flash">
+                ════════════════════════════════════════
+              </div>
+            </div>
+
+            <div class="experience-entry">
+              <div class="exp-line">
+                <span class="exp-label">POSITION:</span>
+                <span class="exp-value">UNITY INTERN</span>
+              </div>
+              <div class="exp-line">
+                <span class="exp-label">COMPANY:</span>
+                <span class="exp-value">COMPACT GYAN</span>
+              </div>
+              <div class="exp-line">
+                <span class="exp-label">PERIOD:</span>
+                <span class="exp-value">JUN 2021 - AUG 2021</span>
+              </div>
+              <div class="exp-line">
+                <span class="exp-label">STATUS:</span>
+                <span class="exp-status complete">█ COMPLETE █</span>
+              </div>
+              <div class="exp-description">
+                <ul>
+                  <li>
+                    Implemented physics simulations for educational applications
+                    demonstrating refraction and gravitational force
+                  </li>
+                  <li>
+                    Developed reusable code components following software
+                    engineering best practices
+                  </li>
+                  <li>Primary Skills: Unity and C#</li>
+                </ul>
+              </div>
+              <div class="exp-ascii-separator flash">
+                ════════════════════════════════════════
+              </div>
+            </div>
+
+            <div class="terminal-footer">
+              <span class="terminal-prompt">&gt;&gt; END_OF_FILE</span>
+              <div class="terminal-cursor blink-medium">█</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="content-section">
+        <div class="section-header">
+          <h2 class="section-title">██ SKILLS ██</h2>
+        </div>
+        <div class="simple-box">
+          <div class="skill-category">
+            <h3 class="skill-title">Programming Languages</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">C#</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">C++</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="skill-title">Game Engines</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Unity</span>
+              <span class="skill-tag">Godot</span>
+              <span class="skill-tag">Unreal</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="skill-title">Tools</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Photoshop</span>
+              <span class="skill-tag">Blender</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">Aseprite</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="content-section">
+        <div class="section-header">
+          <h2 class="section-title">◊◊ CONTACT ◊◊</h2>
+        </div>
+        <div class="simple-box">
+          <div class="contact-info">
+            <p class="contact-line">
+              <strong>EMAIL:</strong> graphicmismatchgames@gmail.com
+            </p>
+            <p class="contact-line">
+              <strong>GITHUB:</strong> @graphicmismatch
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="retro-footer">
+      <div class="footer-content">
+        <p class="footer-text">© 2025 graphicmismatch</p>
+        <div class="footer-decoration">
+          <div class="marquee">★ EOF REACHED ★</div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/portfolio/index.js"></script>
   </body>
 </html>

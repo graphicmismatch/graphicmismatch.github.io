@@ -1,0 +1,210 @@
+/* ===== ANIMATIONS & EFFECTS ===== */
+
+/* Blinking Animation */
+.blink-medium {
+    animation: blink-medium 1.5s infinite;
+}
+
+@keyframes blink-medium {
+    0%, 50% {
+        opacity: 1;
+    }
+    51%, 100% {
+        opacity: 0;
+    }
+}
+
+/* Flash Animation */
+.flash {
+    animation: flash 2s infinite;
+}
+
+@keyframes flash {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.1;
+    }
+}
+
+/* Fast Blink */
+.blink-fast {
+    animation: blink-fast 0.8s infinite;
+}
+
+@keyframes blink-fast {
+    0%, 50% {
+        opacity: 1;
+    }
+    51%, 100% {
+        opacity: 0;
+    }
+}
+
+/* Slow Blink */
+.blink-slow {
+    animation: blink-slow 3s infinite;
+}
+
+@keyframes blink-slow {
+    0%, 80% {
+        opacity: 1;
+    }
+    81%, 100% {
+        opacity: 0.2;
+    }
+}
+
+/* Marquee Scrolling */
+.marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Marquee Reverse */
+.marquee-reverse {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: marquee-reverse 12s linear infinite;
+}
+
+@keyframes marquee-reverse {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Border Flash */
+.border-flash {
+    animation: border-flash 1.5s infinite;
+}
+
+@keyframes border-flash {
+    0%, 100% {
+        border-color: #00ff00;
+    }
+    50% {
+        border-color: #ff00ff;
+    }
+}
+
+/* Text Flash Colors */
+.text-flash {
+    animation: text-flash 2.5s infinite;
+}
+
+@keyframes text-flash {
+    0%, 33% {
+        color: #00ff00;
+    }
+    34%, 66% {
+        color: #ff00ff;
+    }
+    67%, 100% {
+        color: #00ffff;
+    }
+}
+
+/* Glitch Effects */
+@keyframes glitch-1 {
+    0%, 14%, 15%, 49%, 50%, 99%, 100% {
+        transform: translate(0);
+    }
+    15% {
+        transform: translate(-2px, 0);
+    }
+    50% {
+        transform: translate(1px, 0);
+    }
+}
+
+@keyframes glitch-2 {
+    0%, 20%, 21%, 62%, 63%, 99%, 100% {
+        transform: translate(0);
+    }
+    21% {
+        transform: translate(2px, 0);
+    }
+    63% {
+        transform: translate(-1px, 0);
+    }
+}
+
+/* Scrolling Text Animations */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100vw);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-100vw);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Mouse Trail Animation */
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+
+/* Mouse Trail Styles */
+#trail-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.trail-char {
+    position: absolute;
+    color: #00ff00;
+    font-family: 'GameFont','Cascadia Code', 'Fira Code', 'Source Code Pro', 'Courier New', monospace;
+    font-size: 14px;
+    pointer-events: none;
+    animation: fade-out 1s ease-out forwards;
+    text-shadow: 0 0 3px #00ff00;
+}
+
+/* Responsive Animations */
+@media (prefers-reduced-motion: reduce) {
+    .blink,
+    .glitch-text::before,
+    .glitch-text::after,
+    .moving-text,
+    .moving-text-reverse,
+    .sidebar-moving-text,
+    .trail-char {
+        animation: none;
+    }
+}

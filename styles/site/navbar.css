@@ -7,6 +7,7 @@
     align-content: end;
     padding-top: 2px;
     z-index: 999;
+    
 }
 .navbar ul{
     width: 100%;
@@ -48,7 +49,9 @@
 .navmenubutton {
     display: none;
 }
-@media(max-width:550px){
+
+
+@media(max-width:652px){
     .hideonmobile{
         display: none;
     }

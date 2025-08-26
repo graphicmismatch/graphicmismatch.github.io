@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'GameInProj';
+  src: url('../../assets/game.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgba(0, 0, 0, 0) url('../../assets/images/background.png') no-repeat fixed center center / cover;
+  color: white;
+  font-family: 'GameInProj','Cascadia Code', 'Fira Code', 'Source Code Pro', 'Courier New', monospace;;
+
+}
+
+.privacycontent {
+
+  margin: 2rem;
+  padding: 1rem;
+}
+
+.privacycontent ul {
+  padding-left: 1.7rem;
+}
+
+.privacycontent ol {
+
+  padding-left: 1.7rem;
+}
+
+.center {
+  text-align: center;
+}
+
+#textdiv {
+  font-family: 'GameInProj';
+  overflow-wrap: break-word;
+  writing-mode: horizontal-tb;
+}
+
+.privacycontent a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.privacycontent a:visited {
+  color: lightgreen;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.privacycontent a:hover {
+  color: gray;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.privacycontent a:active {
+  color: darkgreen;
+  background-color: transparent;
+  text-decoration: none;
+}

@@ -4,13 +4,12 @@
 }
 @font-face {
     font-family: 'GameFont';
-    src: url('../assets/game.ttf');
+    src: url('../../assets/game.ttf');
 }
 body{
     min-height: 100vh;
-    background:  rgba(0, 0, 0, 0) url("../assets/images/background.png") no-repeat fixed center center / cover;
-  
-    font-family: 'GameFont';
+    background:  rgba(0, 0, 0, 0) url("../../assets/images/background.png") no-repeat fixed center center / cover;
+    font-family: 'GameFont','Cascadia Code', 'Fira Code', 'Source Code Pro', 'Courier New', monospace;
     color: rgb(224, 224, 224);
 }
 
@@ -39,5 +38,18 @@ a:active {
     text-decoration: none;
 }
 
+.center{
+  text-align: center;   
+}
+      
+#textdiv {
+  font-family: "GameFont";
+  overflow-wrap: break-word;
+  writing-mode: horizontal-tb;
+}
+
+.content {
+     margin: 2rem;
+}
 
 

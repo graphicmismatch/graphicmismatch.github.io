@@ -1,0 +1,104 @@
+/* ===== RESET & BASE STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'GameFont';
+    src: url('../../assets/game.ttf');
+}
+body {
+    font-family: 'GameFont','Cascadia Code', 'Fira Code', 'Source Code Pro', 'Courier New', monospace;
+    background-color: #000;
+    color: #00ff00;
+    overflow-x: hidden;
+    cursor: crosshair;
+}
+
+/* ===== COLOR CLASSES ===== */
+.color-primary { color: #00ff00; }
+.color-secondary { color: #ff00ff; }
+.color-accent { color: #00ffff; }
+.color-warning { color: #ffff00; }
+.color-muted { color: #666; }
+
+.bg-primary { background-color: #00ff00; }
+.bg-secondary { background-color: #ff00ff; }
+.bg-dark { background-color: #111; }
+.bg-darker { background-color: #0a0a0a; }
+
+/* ===== BORDER CLASSES ===== */
+.border-primary { border: 2px solid #00ff00; }
+.border-secondary { border: 2px solid #ff00ff; }
+.border-accent { border: 2px solid #00ffff; }
+.border-thin { border: 1px solid #333; }
+
+/* ===== SPACING CLASSES ===== */
+.p-1 { padding: 1rem; }
+.p-2 { padding: 2rem; }
+.p-15 { padding: 1.5rem; }
+.m-1 { margin: 1rem; }
+.m-2 { margin: 2rem; }
+.mb-1 { margin-bottom: 1rem; }
+.mb-15 { margin-bottom: 1.5rem; }
+.mb-2 { margin-bottom: 2rem; }
+.mt-2 { margin-top: 2rem; }
+
+/* ===== TYPOGRAPHY CLASSES ===== */
+.text-large { font-size: 1.8rem; }
+.text-medium { font-size: 1.3rem; }
+.text-normal { font-size: 1.1rem; }
+.text-small { font-size: 0.9rem; }
+.text-tiny { font-size: 0.8rem; }
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+
+/* ===== LAYOUT CLASSES ===== */
+.flex { display: flex; }
+.flex-column { flex-direction: column; }
+.flex-wrap { flex-wrap: wrap; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.align-center { align-items: center; }
+.gap-1 { gap: 1rem; }
+.gap-15 { gap: 1.5rem; }
+.gap-half { gap: 0.5rem; }
+
+.grid { display: grid; }
+.grid-auto { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #111;
+    border: 1px solid #00ff00;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00ff00;
+    border: 1px solid #000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ff00ff;
+}
+
+/* Selection styling */
+::selection {
+    background-color: #00ff00;
+    color: #000;
+}
+
+::-moz-selection {
+    background-color: #00ff00;
+    color: #000;
+}
+
+/* Smooth scrolling for navigation */
+html {
+    scroll-behavior: smooth;
+}

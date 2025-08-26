@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="styles/site/navbar.css" />
     <link rel="stylesheet" href="styles/site/sidebar.css" />
     <link rel="stylesheet" href="styles/site/directory.css" />
-    <script type="text/javascript" src="js/site/navbar.js"></script>
     <link rel="icon" href="/assets/images/Graphicmismatchlogo.svg" />
 
+    <script type="text/javascript" src="js/site/navbar.js"></script>
     <title>Privacy Policies</title>
   </head>
   <nav class="navbar">
@@ -62,38 +62,44 @@
     </ul>
   </nav>
 
-  <nav class="sidebar">
-    <ul>
-      <li
-        class="sbcontent"
-        onclick="hideSidebar()"
-        value="run external javascript"
-      >
-        <a href="#">◀</a>
-      </li>
-      <li class="sbcontent hideonmobile">
-        <a href="index.html">Home</a>
-      </li>
-      <li class="sbcontent">
-        <a href="links.html">Links</a>
-      </li>
-      <li class="sbcontent">
-        <a href="privacy.html">Privacy Policies</a>
-      </li>
-    </ul>
-  </nav>
   <body>
     <div class="content directory">
       <ul>
-        <li><b>Privacy Policies</b></li>
+        <li><b>graphicmismatch.github.io</b></li>
+        <li>├─ <a href="./index.html">Home</a></li>
+
+        <li>├─ <a href="./links.html">Links</a></li>
+
+        <li>├─ <a href="./privacy.html">Privacy</a></li>
+
         <li>
-          ├─
-          <a href="./directory.html">../</a>
+          <ul>
+            <li>
+              │&Tab;&ThickSpace;└─ <a href="./privacy/defrost.html">Defrost</a>
+            </li>
+          </ul>
         </li>
+
+        <li>├─ <a href="./resumes.html">Resumes</a></li>
         <li>
-          └─
-          <a href="./privacy/defrost.html">Defrost</a>
+          <ul>
+            <li>
+              │&Tab;&ThickSpace;├─
+              <a href="./privacy/defrost.html">One-Page Resume</a>
+            </li>
+            <li>
+              │&Tab;&ThickSpace;├─
+              <a href="./privacy/defrost.html">Game Development</a>
+            </li>
+
+            <li>
+              │&Tab;&ThickSpace;└─
+              <a href="./privacy/defrost.html">Software Engineering</a>
+            </li>
+          </ul>
         </li>
+
+        <li>└─ <a href="#">Directory</a></li>
       </ul>
     </div>
   </body>

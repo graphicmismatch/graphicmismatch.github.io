@@ -1,0 +1,379 @@
+/* ===== HEADER COMPONENTS ===== */
+.main-header {
+  text-align: center;
+  padding: 2rem 0;
+  border-bottom: 2px solid #00ff00;
+  position: relative;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 255, 0, 0.03) 2px,
+    rgba(0, 255, 0, 0.03) 4px
+  );
+}
+
+.glitch-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.glitch-everywhere, .trail-char {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9000;
+  color: #00ff00;
+  user-select: none;
+  font-family: 'GameFont', 'Courier New', monospace;
+  white-space: nowrap;
+  font-size: 1rem;
+}
+
+.header-text {
+  font-size: 7vw;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  color: #00ff00;
+  letter-spacing: 0.1em;
+}
+
+
+.blinking-subtitle {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  animation: blink 1s infinite;
+  color: #ff00ff;
+}
+
+/* ===== NAVIGATION ===== */
+.retro-nav {
+  background-color: #111;
+  border: 2px solid #00ff00;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  color: #00ff00;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: 1px solid #00ff00;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link:hover {
+  background-color: #00ff00;
+  color: #000;
+  box-shadow: 0 0 10px #00ff00;
+  transform: translateY(-2px);
+}
+
+.nav-decoration {
+  text-align: center;
+  margin-top: 1rem;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-container {
+  margin-top: 1rem;
+  overflow: hidden;
+  background-color: #111;
+  border: 1px solid #333;
+  padding: 0.5rem 0;
+}
+
+/* ===== LAYOUT ===== */
+.main-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.content-section {
+  margin-bottom: 3rem;
+  border: 2px solid #333;
+  background-color: #0a0a0a;
+}
+
+.section-header {
+  text-align: center;
+  padding: 2rem 0 1rem;
+  border-bottom: 1px solid #333;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  margin-bottom: 0;
+  color: #00ff00;
+}
+
+.simple-box {
+  padding: 2rem;
+  line-height: 1.7;
+}
+
+.intro-text {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #00ff00;
+  text-align: left;
+}
+
+/* ===== PROJECTS ===== */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.project-card {
+  border: 2px solid #00ff00;
+  background-color: #111;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  border-color: #ff00ff;
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.3);
+}
+
+.project-title {
+  color: #00ffff;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.project-desc {
+  color: #00ff00;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.tech-tags, .skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tag, .skill-tag {
+  background-color: #333;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.8rem;
+  border: 1px solid;
+}
+
+.tag {
+  color: #ff00ff;
+  border-color: #ff00ff;
+}
+
+.skill-tag {
+  color: #00ffff;
+  border-color: #00ffff;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  background-color: #00ffff;
+  color: #000;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid #00ff00;
+  color: #00ff00;
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.project-btn:hover {
+  background-color: #00ff00;
+  color: #000;
+}
+
+/* ===== EXPERIENCE SECTION ===== */
+.retro-terminal {
+  background-color: #000;
+  border: 2px solid #00ff00;
+  padding: 1rem;
+  font-family: 'Cascadia Code', 'Fira Code', monospace;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.3), inset 0 0 10px rgba(0, 255, 0, 0.1);
+}
+
+.terminal-header, .terminal-footer {
+  border-bottom: 1px solid #333;
+  padding: 0.5rem 0;
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.terminal-cursor, .terminal-prompt {
+  color: #00ff00;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.experience-entry {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-left: 3px solid #333;
+  transition: border-color 0.3s ease;
+  text-align: left;
+}
+
+.experience-entry:hover {
+  border-left-color: #00ff00;
+  background-color: rgba(0, 255, 0, 0.05);
+}
+
+.exp-line {
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.exp-label {
+  color: #ff00ff;
+  font-weight: bold;
+  min-width: 100px;
+  margin-right: 1rem;
+}
+
+.exp-value {
+  color: #00ffff;
+}
+
+.exp-status {
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border: 1px solid;
+}
+
+.exp-status.active {
+  color: #00ff00;
+  border-color: #00ff00;
+  background-color: rgba(0, 255, 0, 0.1);
+}
+
+.exp-status.complete {
+  color: #666;
+  border-color: #666;
+  background-color: rgba(102, 102, 102, 0.1);
+}
+
+.exp-description {
+  color: #00ff00;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  background-color: rgba(0, 255, 0, 0.05);
+  border-left: 2px solid #00ff00;
+  line-height: 1.6;
+  
+}
+
+.exp-description ul {
+  list-style: none; /* remove default bullets */
+  padding-left: 0;
+}
+
+.exp-description li {
+  position: relative;
+  padding-left: 1.5em;
+}
+
+.exp-description li::before {
+  content: ">";       /* your custom bullet */
+  position: absolute;
+  left: 0;
+}
+.exp-ascii-separator {
+  color: #333;
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 0.8rem;
+}
+
+/* ===== CONTACT SECTION ===== */
+.contact-info {
+  margin-bottom: 2rem;
+}
+
+.contact-line {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  color: #00ff00;
+}
+
+.contact-line strong {
+  color: #ff00ff;
+}
+
+.contact-message {
+  color: #00ffff;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* ===== FOOTER ===== */
+.retro-footer {
+  background-color: #111;
+  border-top: 2px solid #00ff00;
+  padding: 2rem 0;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer-text {
+  color: #00ff00;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.footer-decoration {
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+/* ===== MISC ===== */
+.construction {
+  background: #ffff00;
+  padding: 10px;
+  border: 5px dashed #ff0000;
+}
+
