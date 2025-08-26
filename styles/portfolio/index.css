@@ -8,6 +8,10 @@
     font-family: 'GameFont';
     src: url('../../assets/game.ttf');
 }
+@font-face {
+    font-family: 'Cascadia Code';
+    src: url('../../assets/CascadiaMono.ttf');
+}
 body {
     font-family: 'GameFont','Cascadia Code', 'Fira Code', 'Source Code Pro', 'Courier New', monospace;
     background-color: #000;
