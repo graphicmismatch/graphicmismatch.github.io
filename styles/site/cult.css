@@ -1,0 +1,113 @@
+:root {
+  --bg: #0b0b0b;
+  --panel: rgba(255, 255, 255, 0.06);
+  --text: #efefef;
+  --muted: rgba(239, 239, 239, 0.6);
+  --accent: rgba(255, 255, 255, 0.9);
+  --blur: 6px;
+  --max-width: 760px;
+  --pad: 28px;
+}
+
+html, body {
+  margin: 0;
+  background: linear-gradient(180deg, #050505, var(--bg));
+  color: var(--text);
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.2;
+}
+
+.stage {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 20px;
+}
+
+.card {
+  max-width: var(--max-width);
+  width: 100%;
+  background: rgba(0, 0, 0, 0.02);
+  backdrop-filter: blur(var(--blur));
+  padding: var(--pad);
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.hero img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  filter: grayscale(100%) contrast(1.15) brightness(0.95);
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+.intro h1 {
+  margin: 0;
+  font-size: 18px;
+  color: var(--accent);
+}
+
+.small {
+  margin: 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.cult {
+  margin-top: 20px;
+  padding: 5px;
+  border-radius: 10px;
+  background: rgba(0,0,0s,0.02);
+  border: 1px solid rgba(255,255,255,0.04);
+  font-size: 16px;
+}
+
+.ip-warning {
+  margin-top: 20px;
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  padding: 18px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.04);
+  font-size: 15px;
+}
+
+.ip-warning.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hint {
+  color: var(--muted);
+  font-size: 12px;
+  display: block;
+  margin-top: 10px;
+  text-align: right;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+@media (max-width: 520px) {
+  .hero img {
+    width: 96px;
+    height: 96px;
+  }
+
+  .cult {
+    font-size: 15px;
+  }
+}

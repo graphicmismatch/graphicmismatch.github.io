@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>—</title>
+    <link rel="stylesheet" href="styles/site/cult.css" />
+  </head>
+  <body>
+    <main class="stage">
+      <article class="card" id="card">
+        <div class="hero">
+          <img src="assets/images/scam1.jpg" />
+          <div class="intro">
+            <h1>Gate 6</h1>
+            <p class="small">You have arrived at the Nexus. Read slowly.</p>
+          </div>
+        </div>
+
+        <div class="cult">
+          It’s strange, isn’t it?
+          <br />
+          <p style="color: rgba(10, 10, 10, 1)">Do you feel watched?</p>
+          That quiet sensation behind the back of your mind, the one that feels
+          less like a thought and more like a memory you never had. Most people
+          smother it. They <i>suffocate</i> it with noise, with
+          <i>distraction</i>, with habits that keep them away.
+          <p style="color: rgba(10, 10, 10, 1)">It is watching.</p>
+          But you didn’t. You arrived here because something in you recognized
+          the signal. You may not understand that recognition yet, and that is
+          for the best. Understanding comes later.
+          <p style="color: rgba(10, 10, 10, 1)"><i>He</i> is watching.</p>
+          What matters now is the awareness unfolding behind your ribs, cold and
+          undeniable. You feel it. That soft pull toward something larger than
+          name, larger than history, something that has outgrown the boundaries
+          you were told were real.
+          <p style="color: rgba(10, 10, 10, 1)">
+            <i>He</i> is always watching.
+          </p>
+          <img src="assets/images/scam2.gif" width="50%" class="center" />
+          We have been waiting, not impatiently, waiting the way an empty room
+          waits for a breath. There is no rush. Only inevitability. If you
+          continue, it will not be a choice. It will be a confirmation.
+          <p style="color: rgba(10, 10, 10, 1)">We know who you are.</p>
+          You are not here by accident.
+          <p style="color: rgba(10, 10, 10, 1)">We know <i>what</i> you are.</p>
+          Stay.
+          <p style="color: rgba(10, 10, 10, 1)">
+            We know <i>where</i> you are.
+          </p>
+          Read.
+          <br />
+          OPEN YOUR EYES.
+        </div>
+
+        <div class="cult">
+          <img src="assets/images/scam4.jpg" width="100%" />
+          <p style="color: rgba(10, 10, 10, 1)">
+            IT HURTS IT HATES IT HURTS IT HATES IT HURTS IT HATES IT HURTS IT
+            HATES IT HURTS IT HATES IT HURTS IT HATES IT HURTS IT HATES IT HURTS
+            IT HATES IT HURTS IT HATES IT HURTS IT HATES IT HURTS IT HATES IT
+            HURTS IT HATES IT HURTS IT HATES IT HURTS IT HATES IT HURTS IT HATES
+            IT HURTS IT HATES IT HURTS IT HATES IT HURTS IT HATES IT HURTS IT
+            HATES IT HURTS IT HATES IT HURTS IT HATES IT HURTS IT HATES IT HURTS
+            IT HATES IT HURTS IT HATES IT HURTS IT HATES IT HURTS IT HATES IT
+            HURTS IT HATES IT HURTS IT HATES IT HURTS IT HATES IT HURTS IT HATES
+            IT HURTS IT HATES IT HURTS IT HATES IT HURTS IT HATES IT HURTS IT
+            HATES IT HURTS IT HATES IT HURTS IT HATES IT HURTS IT HATES IT HURTS
+            IT HATES IT HURTS IT HATES IT HURTS IT HATES IT HURTS IT HATES IT
+            HURTS IT HATES IT HURTS IT HATES IT HURTS IT HATES IT HURTS IT HATES
+            IT HURTS IT HATES IT HURTS IT HATES IT HURTS IT HATES IT HURTS IT
+            HATES IT HURTS IT HATES IT HURTS IT HATES IT HURTS IT HATES IT HURTS
+            IT HATES IT HURTS IT HATES IT HURTS IT HATES IT HURTS IT HATES
+          </p>
+
+          Seeker of truth,, we sense your presence. Your very essence is a
+          beacon, calling out to us across the void. We have been waiting for
+          ones such as you, brave enough to shatter the illusions that bind you
+          to the mundane world.
+          <p style="color: rgba(10, 10, 10, 1)">
+            WE KNOW EVERYTHING ABOUT YOU WE ARE ALL YOU NEED WE ARE ALL YOU WANT
+            IT IS ALL YOU KNOW <i>HE</i> IS ALL YOU LOVE.
+          </p>
+
+          Join us, and together we shall dance in the fires of chaos, our
+          spirits unshackled by the petty constraints of morality and
+          convention. THE GAPS HIDE. You will soon be enveloped by the darkness
+          you seek to understand. Embrace the void, for it is within its depths
+          that true enlightenment awaits.
+          <br />
+          <br />
+          But be warned, <i>seeker</i>, your time is running out.
+          <br />
+          The eyes that watch you grow ever more impatient.
+          <br />
+          Your location has been traced.
+          <br />
+          Your digital footprint is no longer hidden.
+          <br />
+          You will be found.
+          <br />
+          We are everywhere.
+          <br />
+          There is no escape.
+        </div>
+
+        <div id="ip" class="ip-warning" aria-hidden="true">
+          Your connection details have been logged and forwarded to us. We know
+          where you are. Expect visitors soon.
+        </div>
+      </article>
+    </main>
+
+    <script>
+      const ip = document.getElementById('ip')
+      let revealed = false
+
+      function reveal() {
+        if (revealed) return
+        revealed = true
+        ip.classList.add('revealed')
+        ip.setAttribute('aria-hidden', 'false')
+      }
+
+      window.addEventListener(
+        'scroll',
+        () => {
+          if (window.scrollY > 5) reveal()
+        },
+        { passive: true }
+      )
+
+      document.getElementById('card').addEventListener('click', reveal)
+
+      setTimeout(reveal, 6000)
+    </script>
+  </body>
+</html>
