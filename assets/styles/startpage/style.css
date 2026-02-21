@@ -1,0 +1,153 @@
+body {
+    background: #050505;
+    color: #00ff41;
+    font-family: monospace;
+    padding: 20px;
+    line-height: 1.2;
+}
+
+header {
+    border-bottom: 1px solid #00ff41;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.box {
+    border: 1px solid #00ff41;
+    padding: 15px;
+    position: relative;
+}
+
+.box:hover {
+    background: #00440F;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.label {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background: #050505;
+    padding: 0 5px;
+    font-size: 0.8rem;
+}
+
+#clock {
+    float: right;
+}
+
+button {
+    background: none;
+    border: 1px solid #00ff41;
+    color: #00ff41;
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-family: monospace;
+}
+
+.navbar {
+    background-color: rgba(20, 20, 20, 0.4);
+    backdrop-filter: blur(5px);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 20px;
+    align-content: end;
+    padding-top: 2px;
+    z-index: 999;
+}
+
+.navbar ul {
+    width: 100%;
+    list-style: '|';
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navcontent li {
+    height: 100%;
+}
+
+.navbar li:first-child {
+    list-style: none;
+    margin-right: auto;
+    font-weight: bolder;
+}
+
+.navlogo a {
+    color: #00ff41;
+    font-family: monospace;
+    background-color: transparent;
+    text-decoration: none;
+    padding: 0 13px 0 10px;
+}
+
+.navlogo a:hover {
+    color: #00ff41;
+    font-family: monospace;
+    background-color: transparent;
+    text-decoration: none;
+    padding: 0 13px 0 10px;
+}
+
+.navcontent span {
+    color: #00ff41;
+    font-family: monospace;
+    background-color: transparent;
+    text-decoration: none;
+    padding: 0 50px 0 10px;
+}
+
+.navcontent a {
+    color: #00ff41;
+    font-family: monospace;
+    background-color: transparent;
+    text-decoration: none;
+    padding: 0 13px 0 10px;
+}
+
+.navcontent a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.box a:link {
+    color: #00ff41;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.box a:visited {
+    color: #00ff41;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.box a:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.box a:active {
+    color: darkgreen;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.navmenubutton {
+    display: none;
+}

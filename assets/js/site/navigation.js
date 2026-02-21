@@ -1,23 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/site/style.css" />
-    <link rel="stylesheet" href="styles/site/navbar.css" />
-    <link rel="stylesheet" href="styles/site/sidebar.css" />
-    <script type="text/javascript" src="js/navbar.js"></script>
-    <link rel="icon" href="/assets/images/Graphicmismatchlogo.svg" />
+document.addEventListener("DOMContentLoaded",populateNavigation)
 
-    <title>Document</title>
-  </head>
-  <nav class="navbar">
-    <ul>
+function populateNavigation(){
+    const sidebar =document.querySelector(".sidebar")
+    const navbar =document.querySelector(".navbar")
+    navbar.innerHTML = `
+         <ul>
       <li class="navlogo">
         <a href="index.html">&gt; GraphicMismatch</a>
       </li>
       <li class="navcontent hideonmobile">
         <a href="index.html">Home</a>
+      </li>
+      <li class="navcontent hideonmobile">
+        <a href="directory.html">Directory</a>
       </li>
       <li class="navcontent hideonmobile">
         <a href="privacy.html">Privacy Policies</a>
@@ -32,9 +27,9 @@
       >
         <a href="#"> ▼ </a>
       </li>
-    </ul>
-  </nav>
-  <nav class="sidebar">
+    </ul>`
+
+    sidebar.innerHTML=`
     <ul>
       <li
         class="sbcontent"
@@ -43,16 +38,18 @@
       >
         <a href="#">◀</a>
       </li>
-      <li class="sbcontent hideonmobile">
+      <li class="sbcontent">
         <a href="index.html">Home</a>
       </li>
       <li class="sbcontent">
         <a href="links.html">Links</a>
       </li>
       <li class="sbcontent">
+        <a href="directory.html">Directory</a>
+      </li>
+      <li class="sbcontent">
         <a href="privacy.html">Privacy Policies</a>
       </li>
     </ul>
-  </nav>
-  <body></body>
-</html>
+    `
+}

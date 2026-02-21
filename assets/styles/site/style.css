@@ -4,15 +4,15 @@
 }
 @font-face {
     font-family: 'GameFont';
-    src: url('../../assets/game.ttf');
+    src: url('../../game.ttf');
 }
 @font-face {
     font-family: 'Cascadia Code';
-    src: url('../../assets/CascadiaMono.ttf');
+    src: url('../../CascadiaMono.ttf');
 }
 body{
     min-height: 100vh;
-    background:  rgba(0, 0, 0, 0) url("../../assets/images/background.png") no-repeat fixed center center / cover;
+    background:  rgba(0, 0, 0, 0) url("../../images/background.png") no-repeat fixed center center / cover;
     font-family: 'GameFont','Cascadia Code', 'Fira Code', 'Source Code Pro', 'Courier New', monospace;
     color: rgb(224, 224, 224);
 }

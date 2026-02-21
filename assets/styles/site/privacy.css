@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'GameInProj';
-  src: url('../../assets/game.ttf');
+  src: url('../../game.ttf');
 }
 
 * {
@@ -9,7 +9,7 @@
 }
 
 body {
-  background: rgba(0, 0, 0, 0) url('../../assets/images/background.png') no-repeat fixed center center / cover;
+  background: rgba(0, 0, 0, 0) url('../../images/background.png') no-repeat fixed center center / cover;
   color: white;
   font-family: 'GameInProj','Cascadia Code', 'Fira Code', 'Source Code Pro', 'Courier New', monospace;;
 
