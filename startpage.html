@@ -5,6 +5,7 @@
     <title>VITSpace</title>
     <link rel="stylesheet" href="assets/styles/startpage/style.css" />
     <script type="text/javascript" src="assets/js/startpage/clock.js"></script>
+    <script type="text/javascript" src="assets/js/startpage/search.js" defer></script>
 
 
 </head>
@@ -33,34 +34,36 @@
  
 <div class="box">
         <span class="label">SEARCH</span>
+        <form id="search">
         <label for="height">Query:</label>
         <input type="search" id="sc" name="sc" size = "50" required>
         <button type="submit">Search</button>
+        </form>
 </div>
 <div class="grid">
     <div class="box">
         <span class="label">WIKIPEDIA</span>
         <form id="wikiSearch">
         <label for="height">Query:</label>
-        <input type="search" id="sc" name="sc" required>
+        <input type="search" id="wsc" name="sc" required>
         <br>
         <button type="submit">Search</button>
         </form>
     </div>
     <div class="box">
         <span class="label">YOUTUBE</span>
-        <form id="wikiSearch">
+        <form id="ytSearch">
         <label for="height">Query:</label>
-        <input type="search" id="sc" name="sc" required>
+        <input type="search" id="ysc" name="sc" required>
         <br>
         <button type="submit">Search</button>
         </form>
     </div>
     <div class="box">
         <span class="label">ITCH.IO</span>
-        <form id="wikiSearch">
+        <form id="itSearch">
         <label for="height">Query:</label>
-        <input type="search" id="sc" name="sc" required>
+        <input type="search" id="isc" name="sc" required>
         <br>
         <button type="submit">Search</button>
         </form>
