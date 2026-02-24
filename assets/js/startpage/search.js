@@ -2,7 +2,8 @@ const mainSearch = document.getElementById('search');
 const wikiSearch = document.getElementById('wikiSearch');
 const ytSearch = document.getElementById('ytSearch');
 const itSearch = document.getElementById('itSearch');
- 
+const ghSearch = document.getElementById('ghSearch');
+
 mainSearch.addEventListener('submit', function (event) {
     handleMainSearch(event);
 });
@@ -14,6 +15,9 @@ ytSearch.addEventListener('submit', function (event) {
 });
 itSearch.addEventListener('submit', function (event) {
     handleItchSearch(event);
+});
+ghSearch.addEventListener('submit', function (event) {
+    handleGithubSearch(event);
 });
  
 function handleMainSearch(event){
@@ -52,4 +56,9 @@ function handleItchSearch(event){
     event.preventDefault();
     const query = document.getElementById('isc').value.trim();
     window.location.href = `https://itch.io/search?q=`+encodeURIComponent(query);
+}
+function handleGithubSearch(event){
+    event.preventDefault();
+    const query = document.getElementById('gsc').value.trim();
+    window.location.href = `https://github.com/search?q=`+encodeURIComponent(query);
 }

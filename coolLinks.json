@@ -1,0 +1,12 @@
+[
+    {
+        "link":"https://learn-haskell.blog/",
+        "title":"Haskell Blog Generator",
+        "description":"Learn Haskell by making a html blog generator."
+    },
+    {
+        "link":"https://neocities.org/browse",
+        "title":"Neocities",
+        "description":"Find cool personal sites."
+    }
+]
