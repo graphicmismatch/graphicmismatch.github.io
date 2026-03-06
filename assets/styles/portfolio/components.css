@@ -2,7 +2,6 @@
 .main-header {
   text-align: center;
   padding: 2rem 0;
-  border-bottom: 2px solid #00ff00;
   position: relative;
   background: repeating-linear-gradient(
     0deg,
@@ -48,8 +47,8 @@
 
 /* ===== NAVIGATION ===== */
 .retro-nav {
-  background-color: #111;
-  border: 2px solid #00ff00;
+  background-color: #000;
+  border: 1px solid #00ff00;
   padding: 1rem 0;
   position: sticky;
   top: 0;
@@ -66,9 +65,8 @@
 .nav-link {
   color: #00ff00;
   text-decoration: none;
-  font-size: 1.1rem;
-  font-weight: bold;
-  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  padding: 0.5rem 0.5rem;
   border: 1px solid #00ff00;
   transition: all 0.3s ease;
   position: relative;
@@ -125,6 +123,12 @@
   padding: 2rem;
   line-height: 1.7;
 }
+.simple-skill-box {
+  padding: 2rem;
+  line-height: 1.7;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .intro-text {
   font-size: 1.1rem;
@@ -138,7 +142,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .project-card {
@@ -146,6 +150,8 @@
   background-color: #111;
   padding: 1.5rem;
   transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card:hover {
@@ -162,18 +168,30 @@
 .project-desc {
   color: #00ff00;
   margin-bottom: 1rem;
-  line-height: 1.5;
+  line-height: 1.5rem;
 }
 
-.tech-tags, .skill-tags {
+.skill-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
   margin-bottom: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.tech-tags{
+  max-width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  margin-top: -0.5rem;
+}
 .tag, .skill-tag {
-  background-color: #333;
+  background-color: #000;
   padding: 0.3rem 0.6rem;
   font-size: 0.8rem;
   border: 1px solid;
@@ -198,6 +216,10 @@
 }
 
 .project-links {
+  max-width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: auto;
   display: flex;
   gap: 1rem;
 }

@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", loadCoolLinks);
 
 async function loadCoolLinks() {
-    const jsonPath = "./coolLinks.json";
+    const jsonPath = "./data/coolLinks.json";
     const container = document.querySelector(".linkcontainer");
     if (!container) return;
 

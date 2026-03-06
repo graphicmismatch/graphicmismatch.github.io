@@ -1,0 +1,37 @@
+[
+    {
+        "image":"./assets/images/logos/youtube.svg",
+        "caption":"Youtube",
+        "link":"https://www.youtube.com"
+    },
+    {
+        "image":"./assets/images/logos/github.svg",
+        "caption":"GitHub",
+        "link":"https://www.github.com"
+    },
+    {
+        "image":"./assets/images/logos/googleImage.svg",
+        "caption":"Google Images",
+        "link":"https://images.google.com/"
+    },
+    {
+        "image":"./assets/images/logos/itch.svg",
+        "caption":"Itch.io",
+        "link":"https://www.itch.io"
+    },
+    {
+        "image":"./assets/images/logos/unity.svg",
+        "caption":"Unity Docs",
+        "link":"https://docs.unity.com"
+    },
+    {
+        "image":"./assets/images/logos/wikipedia.svg",
+        "caption":"Wikipedia",
+        "link":"https://www.wikipedia.com"
+    },
+    {
+        "image":"./assets/images/logos/claude.svg",
+        "caption":"Claude",
+        "link":"https://claude.ai/new"
+    }
+]

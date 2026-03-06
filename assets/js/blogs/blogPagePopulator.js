@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", loadBlogs);
 
 async function loadBlogs() {
-    const jsonPath = "./blogs.json";
+    const jsonPath = "./data/blogs.json";
     const container = document.querySelector(".blogcontainer");
     if (!container) return;
 

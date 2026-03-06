@@ -42,7 +42,6 @@ class GlitchTextEveryWhere {
 
     generateTextFragment() {
         const fragment = this.getRandomElement(this.chars);
-        // Occasionally make fragments longer
         if (Math.random() < 0.15 && fragment.length < 4) {
             return fragment + this.getRandomElement(this.chars).charAt(0);
         }
@@ -89,9 +88,6 @@ class GlitchTextEveryWhere {
     }
 }
 
-// Glowing Green "å" Mouse Trail Effect
-
-
 document.addEventListener('DOMContentLoaded', function() {
 
     new GlitchTextEveryWhere({
@@ -109,12 +105,9 @@ document.addEventListener('DOMContentLoaded', function() {
     let trailElements = [];
     let trailCounter = 0;
     
-    // Track mouse movement
     document.addEventListener('mousemove', function(e) {
         mouseX = e.clientX;
         mouseY = e.clientY;
-        
-        // Create trail character only every 3rd mouse movement
         trailCounter++;
         if (trailCounter % 3 === 0) {
             createTrailChar();
@@ -122,30 +115,26 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     function createTrailChar() {
-        // Limit number of trail elements
-        if (trailElements.length > 20) {
+        if (trailElements.length > 30) {
             const oldElement = trailElements.shift();
             if (oldElement && oldElement.parentNode) {
                 oldElement.parentNode.removeChild(oldElement);
             }
         }
         
-        // Create new trail character
         const trailChar = document.createElement('span');
-        const str = 'ăăăăăă‽▮■□∎å▨▩';
+        const str = 'ăăăăăă‽graphicmismatch▮■□∎å▨▩';
         trailChar.className = 'trail-char';
         trailChar.textContent = str.charAt(Math.floor(Math.random() * str.length));
         trailChar.style.left = (mouseX - 6) + 'px';
         trailChar.style.top = (mouseY - 6) + 'px';
         trailChar.style.color = '#00fa00';
         
-        // Add slight random offset
         trailChar.style.transform = `translate(${(Math.random() - 0.5) * 6}px, ${(Math.random() - 0.5) * 6}px)`;
         
         trailContainer.appendChild(trailChar);
         trailElements.push(trailChar);
         
-        // Remove element after animation completes
         setTimeout(() => {
             if (trailChar && trailChar.parentNode) {
                 trailChar.parentNode.removeChild(trailChar);
@@ -154,10 +143,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     trailElements.splice(index, 1);
                 }
             }
-        }, 1000);
+        }, 1300);
     }
     
-    // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -173,45 +161,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Add classic retro effects
-    setInterval(() => {
-        // Random border color flash for project cards
-        const projectCards = document.querySelectorAll('.project-card');
-        projectCards.forEach(card => {
-            if (Math.random() < 0.05) { // 5% chance
-                card.style.borderColor = '#ffff00';
-                setTimeout(() => {
-                    card.style.borderColor = '';
-                }, 200);
-            }
-        });
-        
-        // Random text color flash for marquee elements
-        const marqueeElements = document.querySelectorAll('.marquee, .marquee-reverse');
-        marqueeElements.forEach(marquee => {
-            if (Math.random() < 0.08) { // 8% chance
-                marquee.style.color = '#ffff00';
-                setTimeout(() => {
-                    marquee.style.color = '';
-                }, 300);
-            }
-        });
+
+
     }, 1000);
     
-    // Add some random glitch effects to text elements
 
-    
-    // Console welcome message
-    console.log(`
-    ██████╗ ███████╗████████╗██████╗  ██████╗     ██████╗ ███████╗██╗   ██╗
-    ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔═══██╗    ██╔══██╗██╔════╝██║   ██║
-    ██████╔╝█████╗     ██║   ██████╔╝██║   ██║    ██║  ██║█████╗  ██║   ██║
-    ██╔══██╗██╔══╝     ██║   ██╔══██╗██║   ██║    ██║  ██║██╔══╝  ╚██╗ ██╔╝
-    ██║  ██║███████╗   ██║   ██║  ██║╚██████╔╝    ██████╔╝███████╗ ╚████╔╝ 
-    ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝     ╚═════╝ ╚══════╝  ╚═══╝  
-    
-    Welcome to the retro zone! Thanks for checking out the source code.
-    This portfolio was crafted with pure HTML, CSS, and minimal JavaScript.
-    Keep creating awesome games! 🎮
-    `);
-});
+    console.log(`Check the source @ https://github.com/graphicmismatch/graphicmismatch.github.io`);

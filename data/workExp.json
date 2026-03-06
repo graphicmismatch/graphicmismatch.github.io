@@ -1,0 +1,49 @@
+[
+    {
+        "position":"GAME DEVELOPER INTERN",
+        "company":"HASHBYTE STUDIO",
+        "period":"SEP 2025 - FEB 2026",
+        "status":"COMPLETE",
+        "description":["Working on games!"]
+    },
+    {
+        "position":"GAME DEVELOPER INTERN",
+        "company":"ETERNOPLAY STUDIO",
+        "period":"JAN 2025 - JUN 2025",
+        "status":"COMPLETE",
+        "description":[ "Developed and published \"Word Quest 2025\" on Google Play Store",
+                        "Implemented scalable game architecture and optimized performance for mobile platforms",
+                        "Collaborated with cross-functional teams using Agile methodologies",
+                        "Primary Skills: Unity, C#, Git" ]
+                
+    },
+    {
+        "position":"UNITY DEVELOPER INTERN",
+        "company":"CORKBRICK EUROPE",
+        "period":"FEB 2022 - JUL 2022",
+        "status":"COMPLETE",
+        "description":[ "Designed and implemented core game mechanics including survival and building systems",
+                        "Contributed to world design and optimized geometry rendering for improved performance",
+                        "Applied object-oriented design principles to create maintainable and scalable code",
+                        "Primary Skills: Unity, C#, Git"]
+    },
+    {
+        "position":"UNITY DEVELOPER INTERN",
+        "company":"TECHAX LABS",
+        "period":"SEP 2021 - DEC 2021",
+        "status":"COMPLETE",
+        "description":[ "Reduced APK size by 40% using Unity Addressable Assets and AWS S3",
+                        "Developed AR-based applications using ARKit, AR Core, and MediaPipe",
+                        "Built machine learning agent behaviors using Unity ML Agents framework",
+                        "Primary Skills: Unity, C#, AWS"]
+    },
+    {
+        "position":"UNITY INTERN",
+        "company":"COMPACT GYAN",
+        "period":"JUN 2021 - AUG 2021",
+        "status":"COMPLETE",
+        "description":[ "Implemented physics simulations for educational applications demonstrating refraction and gravitational force",
+                        "Developed reusable code components following software engineering best practices",
+                        "Primary Skills: Unity, C#"]
+    }
+]

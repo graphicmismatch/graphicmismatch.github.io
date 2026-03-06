@@ -1,0 +1,10 @@
+[
+    {
+        "category":"Programming Languages",
+        "skills":["C#","JavaScript","Java","Python","C","Haskell"]
+    },
+    {
+        "category":"Tools",
+        "skills":["Unity","GIMP","Aseprite","Blender","Git","Audacity"]
+    }
+]

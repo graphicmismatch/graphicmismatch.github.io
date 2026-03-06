@@ -1,0 +1,11 @@
+[
+    {
+        "title":"WASDEditor",
+        "tagline":"A simple dialogue editor built in Unity. Allows for non technical writers to visually edit non-linear dialogues.",
+        "tech":["Unity","C#"],
+        "links":[
+                {"Download":"https://graphicmismatch.itch.io/wasdeditor"},
+                {"Source Code":"https://github.com/graphicmismatch/WASDEditor"}
+                ]
+    }
+]
