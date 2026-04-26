@@ -3,6 +3,52 @@ const wikiSearch = document.getElementById('wikiSearch');
 const ytSearch = document.getElementById('ytSearch');
 const itSearch = document.getElementById('itSearch');
 const ghSearch = document.getElementById('ghSearch');
+const mainSearchInput = document.getElementById('sc');
+const wikiSearchInput = document.getElementById('wsc');
+const ytSearchInput = document.getElementById('ysc');
+const itSearchInput = document.getElementById('isc');
+const ghSearchInput = document.getElementById('gsc');
+
+function bindEnterToSubmit(form, input) {
+    if (!form || !input) {
+        return;
+    }
+
+    input.addEventListener('keydown', function (event) {
+        if (event.key !== 'Enter') {
+            return;
+        }
+
+        event.preventDefault();
+        const submitButton = form.querySelector('button[type="submit"], input[type="submit"]');
+        if (submitButton && typeof form.requestSubmit === 'function') {
+            form.requestSubmit(submitButton);
+            return;
+        }
+
+        if (submitButton) {
+            submitButton.click();
+            return;
+        }
+
+        if (typeof form.requestSubmit === 'function') {
+            form.requestSubmit();
+            return;
+        }
+
+        form.dispatchEvent(new Event('submit', { cancelable: true, bubbles: true }));
+    });
+}
+
+if (mainSearchInput) {
+    mainSearchInput.focus();
+}
+
+bindEnterToSubmit(mainSearch, mainSearchInput);
+bindEnterToSubmit(wikiSearch, wikiSearchInput);
+bindEnterToSubmit(ytSearch, ytSearchInput);
+bindEnterToSubmit(itSearch, itSearchInput);
+bindEnterToSubmit(ghSearch, ghSearchInput);
 
 mainSearch.addEventListener('submit', function (event) {
     handleMainSearch(event);
