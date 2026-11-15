@@ -88,7 +88,24 @@ class GlitchTextEveryWhere {
     }
 }
 
+// Marquee speed: px per second, override per element with data-speed="150"
+const MARQUEE_DEFAULT_SPEED = 100;
+
+function setMarqueeDurations() {
+    document.querySelectorAll('.marquee, .marquee-reverse').forEach(el => {
+        const speed = parseFloat(el.dataset.speed) || MARQUEE_DEFAULT_SPEED;
+        // offsetWidth = container width (padding) + text width = travel distance
+        el.style.setProperty('--marquee-duration', `${el.offsetWidth / speed}s`);
+    });
+}
+
+window.addEventListener('resize', setMarqueeDurations);
+if (document.fonts) {
+    document.fonts.ready.then(setMarqueeDurations);
+}
+
 document.addEventListener('DOMContentLoaded', function() {
+    setMarqueeDurations();
 
     new GlitchTextEveryWhere({
         minInterval: 50,   
@@ -160,10 +177,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-    
-
-
-    }, 1000);
-    
 
     console.log(`Check the source @ https://github.com/graphicmismatch/graphicmismatch.github.io`);
+});

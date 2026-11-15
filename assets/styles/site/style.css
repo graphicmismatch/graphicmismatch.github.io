@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 @font-face {
     font-family: 'GameFont';
@@ -54,6 +55,19 @@ a:active {
 
 .content {
      margin: 2rem;
+}
+
+/* `background-attachment: fixed` renders badly on iOS Safari */
+@media (max-width: 768px), (hover: none) {
+    body {
+        background-attachment: scroll;
+    }
+}
+
+@media (max-width: 600px) {
+    .content {
+        margin: 1rem;
+    }
 }
 
 

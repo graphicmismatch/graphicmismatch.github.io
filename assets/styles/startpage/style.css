@@ -1,9 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background: #050505;
     color: #00ff41;
     font-family: monospace;
     padding: 20px;
     line-height: 1.2;
+    overflow-x: hidden;
 }
 
 header {
@@ -20,13 +25,56 @@ header {
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    
+
 }
 
 .shortcut-grid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     padding: 0 1rem;
+}
+
+/* grid items default to min-width:auto, so the size="50" input below
+   would force tracks wider than the viewport */
+.grid > .box,
+.shortcut-grid > .shortcut {
+    min-width: 0;
+}
+
+.box input[type="search"] {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+}
+
+@media (max-width: 700px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .shortcut-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* 60px of padding is far too much on a narrow nav */
+    .navcontent span {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 420px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .shortcut-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* captions overflow a narrow 3-column track at full size */
+    .shortcut p {
+        font-size: 0.75rem;
+    }
 }
 
 .shortcut {
@@ -76,6 +124,7 @@ button {
     margin-top: 10px;
     cursor: pointer;
     font-family: monospace;
+    min-height: 44px;
 }
 
 .navbar {
@@ -93,8 +142,10 @@ button {
     width: 100%;
     list-style: '|';
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
+    row-gap: 0.5rem;
 }
 
 .navcontent li {
@@ -170,4 +221,11 @@ button {
 
 .navmenubutton {
     display: none;
+}
+
+.navlogo a,
+.navcontent a {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
 }

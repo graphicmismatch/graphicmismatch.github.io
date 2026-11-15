@@ -56,35 +56,34 @@
     }
 }
 
-/* Marquee Scrolling */
-.marquee {
+/* Marquee Scrolling
+   The element is sized to its text (width: max-content) and offset one full
+   container width to the right (padding-left: 100%). Animating to
+   translateX(-100%) then moves it by container width + text width, so the
+   text always enters from one edge and fully exits the other, regardless of
+   how wide the text is relative to the container. */
+.marquee,
+.marquee-reverse {
+    display: block;
+    width: max-content;
     white-space: nowrap;
-    overflow: hidden;
-    animation: marquee 15s linear infinite;
+    padding-left: 100%;
+    will-change: transform;
+    /* --marquee-duration is set by JS from the data-speed attribute (px/s);
+       the fallback applies if JS does not run */
+    animation: marquee var(--marquee-duration, 15s) linear infinite;
+}
+
+.marquee-reverse {
+    animation-direction: reverse;
 }
 
 @keyframes marquee {
     0% {
-        transform: translateX(100%);
+        transform: translateX(0);
     }
     100% {
         transform: translateX(-100%);
-    }
-}
-
-/* Marquee Reverse */
-.marquee-reverse {
-    white-space: nowrap;
-    overflow: hidden;
-    animation: marquee-reverse 12s linear infinite;
-}
-
-@keyframes marquee-reverse {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(100%);
     }
 }
 
@@ -206,5 +205,13 @@
     .sidebar-moving-text,
     .trail-char {
         animation: none;
+    }
+
+    .marquee,
+    .marquee-reverse {
+        animation: none;
+        padding-left: 0;
+        width: auto;
+        text-align: center;
     }
 }

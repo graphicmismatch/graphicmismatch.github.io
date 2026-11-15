@@ -1,0 +1,32 @@
+/* ===== SHARED BASE =====
+   Cross-cutting rules for every page. Link this BEFORE the page's
+   own stylesheets so they can still override it. */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Stop iOS inflating text when the phone is turned to landscape */
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    /* `clip` prevents sideways overflow without making body a scroll
+       container, so sticky navs keep working. `hidden` is the fallback
+       for browsers without `clip`. */
+    overflow-x: hidden;
+    overflow-x: clip;
+    /* Break long unbreakable tokens (emails, URLs) instead of overflowing */
+    overflow-wrap: break-word;
+}
+
+img,
+svg,
+video,
+canvas {
+    max-width: 100%;
+    height: auto;
+}

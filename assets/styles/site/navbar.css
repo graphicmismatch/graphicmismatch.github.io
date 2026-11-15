@@ -13,6 +13,7 @@
     width: 100%;
     list-style: '|';
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
 }
@@ -48,6 +49,13 @@
 }
 .navmenubutton {
     display: none;
+}
+
+.navlogo a,
+.navcontent a {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
 }
 
 

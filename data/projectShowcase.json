@@ -7,5 +7,21 @@
                 {"Download":"https://graphicmismatch.itch.io/wasdeditor"},
                 {"Source Code":"https://github.com/graphicmismatch/WASDEditor"}
                 ]
+    },
+    {
+        "title":"CompositeCurves",
+        "tagline":"A ScriptableObject-driven piecewise curve system for tuning and balancing Unity games, with a custom inspector and code generation.",
+        "tech":["Unity","C#"],
+        "links":[
+                {"Source Code":"https://github.com/graphicmismatch/CompositeCurves"}
+                ]
+    },
+    {
+        "title":"keeb",
+        "tagline":"A data-driven Android on-screen keyboard with a platform-agnostic core, swipe typing, autocorrect and 68 layouts.",
+        "tech":["C#",".NET","Android"],
+        "links":[
+                {"Source Code":"https://github.com/graphicmismatch/keeb"}
+                ]
     }
 ]

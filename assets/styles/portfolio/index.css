@@ -16,7 +16,6 @@ body {
     font-family: 'GameFont','Cascadia Code', 'Fira Code', 'Source Code Pro', 'Courier New', monospace;
     background-color: #000;
     color: #00ff00;
-    overflow-x: hidden;
     cursor: crosshair;
 }
 
@@ -70,7 +69,7 @@ body {
 .gap-half { gap: 0.5rem; }
 
 .grid { display: grid; }
-.grid-auto { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+.grid-auto { grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); }
 
 /* Scrollbar Styling */
 ::-webkit-scrollbar {

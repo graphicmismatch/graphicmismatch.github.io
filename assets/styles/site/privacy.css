@@ -6,6 +6,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -28,6 +29,26 @@ body {
 .privacycontent ol {
 
   padding-left: 1.7rem;
+}
+
+/* `background-attachment: fixed` renders badly on iOS Safari */
+@media (max-width: 768px), (hover: none) {
+  body {
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 600px) {
+  .privacycontent {
+    margin: 0.75rem;
+    padding: 0.5rem;
+  }
+
+  /* nested lists compound this indent at every level */
+  .privacycontent ul,
+  .privacycontent ol {
+    padding-left: 1rem;
+  }
 }
 
 .center {
