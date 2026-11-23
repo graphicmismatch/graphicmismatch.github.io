@@ -21,7 +21,7 @@
         "tagline":"A data-driven Android on-screen keyboard with a platform-agnostic core, swipe typing, autocorrect and 68 layouts.",
         "tech":["C#",".NET","Android"],
         "links":[
-                {"Source Code":"https://github.com/graphicmismatch/keeb"}
+                {"Source Code":"https://github.com/graphicmismatch-tools/keeb"}
                 ]
     }
 ]
